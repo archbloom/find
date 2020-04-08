@@ -1,8 +1,3 @@
-class Application
+require_relative 'users_controller'
 
-  def call(env)
-    [200, {}, ['Hello from the Ruby web app using Rack']]
-  end
-end
-
-run Application.new
+run UsersController.new

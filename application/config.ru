@@ -4,6 +4,10 @@ require_relative 'database'
 # env request variable - passed to all the classes
 # eg: to users controller's call will receive env
 
+Rack::Reloader
+
+database = Database.new
+
 map('/users') do
-  run UsersController.new
+  run UsersController.new(database)
 end

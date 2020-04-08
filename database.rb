@@ -4,10 +4,14 @@ class Database
   class << self
     def get_users(id = nil)
       if id
-        USERS.select { |user| user[:id] == id }
+        USERS.select { |user| user[:id] == id || user['id'] == id }
       else
         USERS
       end
+    end
+
+    def add_user(user)
+      USERS << user
     end
   end
 

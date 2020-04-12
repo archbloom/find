@@ -12,3 +12,8 @@ Just a sample Ruby based web application using Rack.
   - this `call` accepts an argument `env`
   - this `env` is environment has which all the information regarding the request
   - this handles the request and performs required operation
+
+Learn more:
+
+- [Rack GitHub](https://github.com/rack/rack)
+- [Rack SPEC](https://www.rubydoc.info/github/rack/rack/file/SPEC)

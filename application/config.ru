@@ -4,7 +4,10 @@ require_relative 'database'
 # env request variable - passed to all the classes
 # eg: to users controller's call will receive env
 
-Rack::Reloader
+use Rack::Reloader
+use Rack::Runtime
+use Rack::ContentType, 'application/json'
+use Rack::ContentLength
 
 database = Database.new
 
